@@ -4,27 +4,40 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float Speed;
-    public float rotSpeed;
-    public Rigidbody rb;
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = gameObject.GetComponent<Rigidbody>();
+    public WheelCollider frontRight;
+    public WheelCollider frontLeft;
+    public WheelCollider backRight;
+    public WheelCollider backLeft;
+
+    public float accel;
+    public float breakForce;
+    public float maxTurnAngle;
+
+    private float currAccel = 0f;
+    private float currBreakForce = 0f;
+    private float currTurnAngle;
+
+
+    private void FixedUpdate(){
+
+        currAccel = accel * Input.GetAxis("Vertical");
+
+        if(Input.GetKey(KeyCode.S))
+            currBreakForce = breakForce;
+        else
+            currBreakForce = 0f;
+
+        frontRight.motorTorque = currAccel;
+        frontLeft.motorTorque = currAccel;
+
+        frontRight.brakeTorque = currBreakForce;
+        frontLeft.brakeTorque = currBreakForce;
+        backRight.brakeTorque = currBreakForce;
+        backLeft.brakeTorque = currBreakForce;
+
+        currTurnAngle = maxTurnAngle * Input.GetAxis("Horizontal");
+        frontLeft.steerAngle = currTurnAngle;
+        frontRight.steerAngle = currTurnAngle;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        float Hor = Input.GetAxis("Horizontal");
-
-        if(Input.GetKey(KeyCode.W))
-        {
-            rb.AddForce((Speed / (rb.velocity.z + 3)) * Vector3.forward);
-        }
-
-
-
-        rb.AddTorque(Hor * rotSpeed * Vector3.up);
-    }
 }
