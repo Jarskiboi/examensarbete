@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Player : MonoBehaviour
 {
@@ -40,4 +42,8 @@ public class Player : MonoBehaviour
         frontRight.steerAngle = currTurnAngle;
     }
 
+    private void Update(){
+        if(Input.GetKeyDown(KeyCode.R))
+            transform.rotation = new Quaternion(0f,0f,0f,0f);
+    }
 }
