@@ -18,6 +18,6 @@ public class UI : MonoBehaviour
     void Update()
     {
         FPSText.text = Mathf.Round(1f / Time.unscaledDeltaTime) + "";
-        speedText.text = Mathf.Round(playerRb.velocity.magnitude)+ "";
+        speedText.text = Mathf.Round(playerRb.velocity.magnitude * 3)+ "";
     }
 }
