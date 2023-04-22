@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public WheelCollider backRight;
     public WheelCollider backLeft;
 
+    public Rigidbody rb;
+
     public float accel;
     public float breakForce;
     public float maxTurnAngle;
@@ -24,7 +26,7 @@ public class Player : MonoBehaviour
 
         currAccel = accel * Input.GetAxis("Vertical");
 
-        if(Input.GetKey(KeyCode.S))
+        if(Input.GetKey(KeyCode.S) && rb.velocity.magnitude < .1f)
             currBreakForce = breakForce;
         else
             currBreakForce = 0f;
