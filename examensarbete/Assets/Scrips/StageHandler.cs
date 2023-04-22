@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StageHandler : MonoBehaviour
 {
+    public UI handler;
+
     public float t;
     // Start is called before the first frame update
     void Start()
@@ -20,5 +22,6 @@ public class StageHandler : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         print(t);
+        handler.Win(t);
     }
 }

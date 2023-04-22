@@ -8,18 +8,17 @@ public class UI : MonoBehaviour
     public TextMeshProUGUI FPSText;
     public TextMeshProUGUI speedText;
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI winTimeText;
     public Rigidbody playerRb;
     public StageHandler handler;
+    public GameObject WinScreen;
     // Start is called before the first frame update
     void Start()
     {
-        
+        WinScreen.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        float t = handler.t;
+    public string TimeCalc(float t){
         int min = (int)((t - t % 60)/60);
         string Min;
         if (min < 10)
@@ -35,8 +34,23 @@ public class UI : MonoBehaviour
         else    
             Sec = (t % 60).ToString("F2");
 
-        timerText.text = Min + ":" + Sec;
+        return Min + ":" + Sec;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        timerText.text = TimeCalc(handler.t);
         FPSText.text = Mathf.Round(1f / Time.unscaledDeltaTime) + "";
         speedText.text = Mathf.Round(playerRb.velocity.magnitude * 3)+ "";
+    }
+
+    public void Win(float t){
+        speedText.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
+        WinScreen.SetActive(true);
+        winTimeText.text = TimeCalc(t);
+        Time.timeScale = 0.3f;
+        Time.fixedDeltaTime = Time.timeScale * .02f;
     }
 }

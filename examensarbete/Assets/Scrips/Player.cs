@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
 
     private void Update(){
         if(Input.GetKeyDown(KeyCode.R))
-            transform.rotation = new Quaternion(0f,0f,0f,0f);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Time.timeScale = 1f;
+            Time.fixedDeltaTime = .02f;
     }
 }
