@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4750844104403477849}
   m_Layer: 0
   m_Name: UIHandler
-  m_TagString: Untagged
+  m_TagString: Handler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,4 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPSText: {fileID: 0}
   speedText: {fileID: 0}
+  timerText: {fileID: 0}
+  winTimeText: {fileID: 0}
   playerRb: {fileID: 0}
+  handler: {fileID: 0}
+  WinScreen: {fileID: 0}
+  medals: []
+  winT: 0

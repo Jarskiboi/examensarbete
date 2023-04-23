@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public WheelCollider backRight;
     public WheelCollider backLeft;
 
+    public PlayerSound playerSound;
+
     public Rigidbody rb;
 
     public float accel;
@@ -26,7 +28,7 @@ public class Player : MonoBehaviour
 
         currAccel = accel * Input.GetAxis("Vertical");
 
-        if(Input.GetKey(KeyCode.S) && rb.velocity.magnitude < .1f)
+        if(Input.GetKey(KeyCode.S))
             currBreakForce = breakForce;
         else
             currBreakForce = 0f;
@@ -49,5 +51,11 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             Time.timeScale = 1f;
             Time.fixedDeltaTime = .02f;
+
+        if(!frontRight.isGrounded | !backLeft.isGrounded)
+            playerSound.Stop();
+
+        if(frontRight.isGrounded | backLeft.isGrounded)
+            playerSound.Continue();
     }
 }
