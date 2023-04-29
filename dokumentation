@@ -1,3 +1,5 @@
+Jarno Heikkilä
+
 Genre: racing
 
 Pelaaja pyrkii saamaan kentän ajettua läpi nopeassa ajassa.
@@ -7,3 +9,6 @@ Lähtökohtaisesti yksi kenttä tarkoituksena.
 Tavoitteena hienosäädetyt fysiikat ja tuntuma.
 
 Auton liikuttaminen https://www.youtube.com/watch?v=QQs9MWLU_tU tutoriaalilla
+Auton fysiikat wheel colliderilla
+
+Tallentaminen ja tieto ennätyksistä välitetään scenejen välillä PlayerPrefs avulla.
