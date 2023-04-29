@@ -1174,7 +1174,7 @@ RectTransform:
   m_GameObject: {fileID: 938736174}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.57291675, y: 0.57291675, z: 0.57291675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1896519566}
@@ -1183,7 +1183,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 29, y: 166.95412}
-  m_SizeDelta: {x: 520.4484, y: 386.7062}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938736176
 MonoBehaviour:
@@ -1205,7 +1205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e7fb57c4753b05a40b19a26777d7ba4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a35709ca85c310741aea4ad3c2563f85, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3046,7 +3046,7 @@ RectTransform:
   m_GameObject: {fileID: 1114450354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.57291675, y: 0.57291675, z: 0.57291675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1896519566}
@@ -3055,7 +3055,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -301, y: 165.46802}
-  m_SizeDelta: {x: 520.4484, y: 386.7062}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1114450356
 MonoBehaviour:
@@ -3077,7 +3077,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d8baf2b0651f06c4bb0cbefc3e82cd3c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30220658964d92a4cb9ca64d732845a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3361,6 +3361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpeed: 1
   maxSpeed: 80
+  grounded: 1
   minPitch: 0.7
   maxPitch: 3
 --- !u!1 &1287181363 stripped
@@ -4133,7 +4134,7 @@ RectTransform:
   m_GameObject: {fileID: 1667289855}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.57291675, y: 0.57291675, z: 0.57291675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1896519566}
@@ -4142,7 +4143,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 332, y: 172.89828}
-  m_SizeDelta: {x: 520.4484, y: 386.7062}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667289857
 MonoBehaviour:
@@ -4164,7 +4165,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fc21d171caf8e1040beb271623189497, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 25000f00876d3264dab06c4a352a4770, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4652,12 +4653,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handler: {fileID: 166205250}
+  achMedal: 0
+  Level: 0
+  hs: 0
   reqTimes:
   - 9.28
   - 9.4
   - 9.8
-  Level: 0
-  hs: 0
   t: 0
 --- !u!136 &1856920582
 CapsuleCollider:
@@ -4930,11 +4932,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3054929928721489336, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 5.4158805e-10
+      value: 1.7763566e-15
       objectReference: {fileID: 0}
     - target: {fileID: 3054929928721489336, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.745497e-10
+      value: -8.881783e-16
       objectReference: {fileID: 0}
     - target: {fileID: 3054929928721489337, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_Follow
@@ -4974,11 +4976,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3054929930205595295, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017927514
+      value: 0.000000018710406
       objectReference: {fileID: 0}
     - target: {fileID: 3054929930205595295, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000042844914
+      value: -0.000000004471595
       objectReference: {fileID: 0}
     - target: {fileID: 3054929930205595295, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

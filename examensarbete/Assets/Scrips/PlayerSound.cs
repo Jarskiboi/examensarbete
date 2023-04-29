@@ -8,6 +8,8 @@ public class PlayerSound : MonoBehaviour
     public float maxSpeed;
     private float currentSpeed;
 
+    public bool grounded = true;
+
     private Rigidbody rb;
     private AudioSource carAudio;
 
@@ -36,12 +38,19 @@ public class PlayerSound : MonoBehaviour
             carAudio.pitch = maxPitch;
     }
 
-    public void Stop()
+    public void Grounding(bool g)
     {
-        carAudio.Pause();
-    }
-    public void Continue()
-    {
-        carAudio.UnPause();
+
+        if(g && !grounded)
+        {
+            carAudio.volume *= 3;
+            grounded = true;
+        }
+
+        if(!g && grounded)
+        {
+            carAudio.volume /= 3;
+            grounded = false;
+        }
     }
 }

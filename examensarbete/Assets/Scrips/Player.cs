@@ -36,8 +36,8 @@ public class Player : MonoBehaviour
         frontRight.motorTorque = currAccel;
         frontLeft.motorTorque = currAccel;
 
-        frontRight.brakeTorque = currBreakForce;
-        frontLeft.brakeTorque = currBreakForce;
+        /*frontRight.brakeTorque = currBreakForce;
+        frontLeft.brakeTorque = currBreakForce;*/
         backRight.brakeTorque = currBreakForce;
         backLeft.brakeTorque = currBreakForce;
 
@@ -52,10 +52,9 @@ public class Player : MonoBehaviour
             Time.timeScale = 1f;
             Time.fixedDeltaTime = .02f;
 
-        if(!frontRight.isGrounded | !backLeft.isGrounded)
-            playerSound.Stop();
-
         if(frontRight.isGrounded | backLeft.isGrounded)
-            playerSound.Continue();
+            playerSound.Grounding(true);
+        else    
+            playerSound.Grounding(false);
     }
 }

@@ -43,8 +43,11 @@ public class StageHandler : MonoBehaviour
         else
             achMedal = 0;
         
-        PlayerPrefs.SetFloat(Level + "Medal", achMedal);
+        PlayerPrefs.SetInt(Level + "Medal", achMedal);
+        print(Level+"Medal   "+achMedal);
 
         handler.Medals(achMedal);
+
+        PlayerPrefs.Save();
     }
 }
