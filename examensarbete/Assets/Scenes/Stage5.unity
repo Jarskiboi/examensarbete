@@ -4879,14 +4879,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3986939560283257287, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
-      propertyPath: m_WheelDampingRate
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3986939560512796416, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
-      propertyPath: m_Mass
-      value: 1400
-      objectReference: {fileID: 0}
     - target: {fileID: 3986939560512796417, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4931,41 +4923,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3986939560512796422, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
-      propertyPath: accel
-      value: 900
-      objectReference: {fileID: 0}
-    - target: {fileID: 3986939560512796422, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3986939560512796422, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
-      propertyPath: breakForce
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 3986939560512796423, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3986939560526957226, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3986939560898082241, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
-      propertyPath: m_WheelDampingRate
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3986939561110973796, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
-      propertyPath: m_WheelDampingRate
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3986939561645970185, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
-      propertyPath: m_Center.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3986939562026724052, guid: daa86bef6e102e740b40c7dc326d5189, type: 3}
-      propertyPath: m_WheelDampingRate
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5269,11 +5229,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3054929928721489336, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1.7763568e-15
+      value: -8.755663e-12
       objectReference: {fileID: 0}
     - target: {fileID: 3054929928721489336, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 8.881784e-16
+      value: 4.4386717e-12
       objectReference: {fileID: 0}
     - target: {fileID: 3054929928721489337, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_Follow
@@ -5313,11 +5273,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3054929930205595295, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000018710406
+      value: 0.000000018698048
       objectReference: {fileID: 0}
     - target: {fileID: 3054929930205595295, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000044716026
+      value: -0.00000000446865
       objectReference: {fileID: 0}
     - target: {fileID: 3054929930205595295, guid: 76da31e5f3e706f47b992eb0c721bd14, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
