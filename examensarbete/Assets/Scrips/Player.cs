@@ -36,8 +36,8 @@ public class Player : MonoBehaviour
         frontRight.motorTorque = currAccel;
         frontLeft.motorTorque = currAccel;
 
-        /*frontRight.brakeTorque = currBreakForce;
-        frontLeft.brakeTorque = currBreakForce;*/
+        frontRight.brakeTorque = currBreakForce;
+        frontLeft.brakeTorque = currBreakForce;
         backRight.brakeTorque = currBreakForce;
         backLeft.brakeTorque = currBreakForce;
 

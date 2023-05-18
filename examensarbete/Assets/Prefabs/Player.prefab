@@ -41,10 +41,10 @@ WheelCollider:
   m_GameObject: {fileID: 3986939560283257285}
   serializedVersion: 2
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.4
+  m_Radius: 0.37
   m_SuspensionSpring:
     spring: 90000
-    damper: 3000
+    damper: 2000
     targetPosition: 1
   m_SuspensionDistance: 0.1
   m_ForceAppPointDistance: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
   rb: {fileID: 3986939560512796416}
   accel: 700
   breakForce: 200
-  maxTurnAngle: 5
+  maxTurnAngle: 10
 --- !u!114 &3129632588511740400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +156,7 @@ Rigidbody:
   m_Mass: 1000
   m_Drag: 0.05
   m_AngularDrag: 3
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_CenterOfMass: {x: 0, y: 0.2, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -165,7 +165,7 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -344,10 +344,10 @@ WheelCollider:
   m_GameObject: {fileID: 3986939560898082247}
   serializedVersion: 2
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.4
+  m_Radius: 0.37
   m_SuspensionSpring:
     spring: 90000
-    damper: 3000
+    damper: 2000
     targetPosition: 1
   m_SuspensionDistance: 0.1
   m_ForceAppPointDistance: 0
@@ -415,10 +415,10 @@ WheelCollider:
   m_GameObject: {fileID: 3986939561110973786}
   serializedVersion: 2
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.4
+  m_Radius: 0.37
   m_SuspensionSpring:
     spring: 90000
-    damper: 3000
+    damper: 2000
     targetPosition: 1
   m_SuspensionDistance: 0.1
   m_ForceAppPointDistance: 0
@@ -486,10 +486,10 @@ WheelCollider:
   m_GameObject: {fileID: 3986939562026724042}
   serializedVersion: 2
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.4
+  m_Radius: 0.37
   m_SuspensionSpring:
     spring: 90000
-    damper: 3000
+    damper: 2000
     targetPosition: 1
   m_SuspensionDistance: 0.1
   m_ForceAppPointDistance: 0
