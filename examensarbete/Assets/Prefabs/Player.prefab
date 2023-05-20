@@ -126,6 +126,7 @@ MonoBehaviour:
   backLeft: {fileID: 3986939560898082241}
   playerSound: {fileID: 3129632588511740400}
   rb: {fileID: 3986939560512796416}
+  player: {fileID: 3986939560512796417}
   accel: 700
   breakForce: 200
   maxTurnAngle: 10

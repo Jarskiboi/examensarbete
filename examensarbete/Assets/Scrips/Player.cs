@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public PlayerSound playerSound;
 
     public Rigidbody rb;
+    public Transform player;
 
     public float accel;
     public float breakForce;
@@ -25,9 +26,9 @@ public class Player : MonoBehaviour
 
 
     private void FixedUpdate(){
-
-        currAccel = accel * Input.GetAxis("Vertical");
-
+        float rad = player.rotation.x / 180 * Mathf.PI;
+        currAccel = accel * Input.GetAxis("Vertical") * (1f + 100 * Mathf.Abs(Mathf.Sin(rad)));
+        print(currAccel);
         if(Input.GetKey(KeyCode.S))
             currBreakForce = breakForce;
         else
